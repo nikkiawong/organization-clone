@@ -356,4 +356,55 @@ h4 {
   color: white;
 }
 
+.col-md-4 {
+  width: 100%;
+  padding: 20px;
+  margin-right: 20px;
+  font-size: 12px;
+}
+.col-md-4 ul {
+  list-style-type: none;
+  margin-left: -35px;
+}
+.col-md-4 ul li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.footer-outer-edges {
+  background-color: #f5f5f5;
+}
+
+.footer-main-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: baseline;
+}
+
+.footer-links-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.email-signup {
+  width: 500px;
+  margin-right: 5%;
+}
+.email-signup h2 {
+  font-weight: 500;
+}
+
+.email-form {
+  display: flex;
+  flex-direction: row;
+}
+.email-form input {
+  width: 300px;
+  padding: 16px;
+  margin-right: 10px;
+}
+
 /*# sourceMappingURL=output.css.map */
