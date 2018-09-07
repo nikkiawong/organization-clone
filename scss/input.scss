@@ -431,9 +431,37 @@ h4 {
 .email-form {
   display: flex;
   flex-direction: row;
+  align-items: center;
   input {
     width: 300px;
     padding: 16px;
     margin-right: 10px;
   }
+  p {
+    background-color: #e5e5e5;
+    padding: {
+      top: 15px;
+      left: 20px;
+      bottom: 15px;
+      right: 20px;
+    }
+    color: white;
+    font-weight: bold;
+    &:hover {
+      cursor: pointer;
+    }
+    margin: 0;
+  }
+}
+
+.corporate-info {
+  @include rowStyle;
+  margin: {
+    left: 5%;
+    right: 5%;
+  }
+}
+
+.corporate-links {
+  @include horizontalMenuStyle;
 }

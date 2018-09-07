@@ -400,11 +400,40 @@ h4 {
 .email-form {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 .email-form input {
   width: 300px;
   padding: 16px;
   margin-right: 10px;
+}
+.email-form p {
+  background-color: #e5e5e5;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+  color: white;
+  font-weight: bold;
+  margin: 0;
+}
+.email-form p:hover {
+  cursor: pointer;
+}
+
+.corporate-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.corporate-links ul li {
+  display: inline;
+  padding: 0px 8px 0px 8px;
 }
 
 /*# sourceMappingURL=output.css.map */
