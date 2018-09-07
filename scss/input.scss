@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin horizontalMenuStyle {
+  ul {
+    li {
+      display: inline;
+      padding: 0px 8px 0px 8px;
+    }
+  }
+}
+
+nav {
+  margin-bottom: 15px;
+}
+
+.top-black-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 4px;
+  background-color: black;
+  a {
+    color: white;
+  }
+}
+
+.top-right-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  @include horizontalMenuStyle;
+}
+
+.user-account-links {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 20px;
+}
+
+.help, .login {
+  padding: 10px;
+}
+
+.main-menu {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  height: 30px;
+  margin: {
+    top: 0;
+    left: 2%;
+    right: 2%;
+  }
+  @include horizontalMenuStyle;
+}
+
+.main-menu-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  wrap: nowrap;
+}
+
+.search-bag {
+  display: flex;
+  align-self: center;
+  img {
+    height: 25px;
+    width: auto;
+  }
+}
+
+#bag-icon {
+  margin-left: 10px;
+}
+
+.feature-slideshow {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
