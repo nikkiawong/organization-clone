@@ -63,15 +63,6 @@ html, body {
   height: auto;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-  &:hover {
-    color: $innisfree-green;
-    text-decoration: underline;
-  }
-}
-
 @mixin categoryLabelStyle {
   display: flex;
   align-self: center;
@@ -109,6 +100,15 @@ a {
   text-align: center;
   h1 {
     font-size: 50px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  &:hover {
+    color: $innisfree-green;
+    text-decoration: underline;
   }
 }
 
@@ -202,6 +202,31 @@ nav {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .nav-links, .top-right-menu {
+    display: none;
+  }
+  .main-menu {
+    display: flex;
+    align-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: flex-end;
+    height: 10px;
+  }
+  .logo {
+    img {
+      width: 80px;
+    }
+  }
+  .search-bag {
+    margin-left: 38%;
+    #bag-icon, #search-icon {
+      height: 20px;
+    }
+  }
+}
+
 .search-bag {
   display: flex;
   align-self: center;
@@ -243,6 +268,25 @@ nav {
 
 .row {
   @include rowStyle;
+}
+
+@media screen and (max-width: 900px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .col-md-3 {
+    display: flex;
+    align-items: center;
+    margin: {
+      left: auto;
+      right: auto;
+      bottom: 1%;
+    }
+    .quick-shop, .rating-review {
+      display: none;
+    }
+  }
 }
 
 .col-md-3 {
@@ -381,6 +425,31 @@ h4 {
     background-color: $innisfree-green;
     a {
       color: white;
+    }
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .sheet-masks-content {
+    h1 {
+      font-size: 32px;
+    }
+    p {
+      font-size: 10px;
+    }
+    a {
+      font-size: 12px;
+    }
+  }
+  .green-life {
+    h1 {
+      font-size: 32px;
+    }
+    p {
+      font-size: 10px;
+    }
+    a {
+      font-size: 12px;
     }
   }
 }

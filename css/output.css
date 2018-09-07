@@ -111,6 +111,31 @@ nav {
   text-decoration: none;
 }
 
+@media screen and (max-width: 1200px) {
+  .nav-links, .top-right-menu {
+    display: none;
+  }
+
+  .main-menu {
+    display: flex;
+    align-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: flex-end;
+    height: 10px;
+  }
+
+  .logo img {
+    width: 80px;
+  }
+
+  .search-bag {
+    margin-left: 38%;
+  }
+  .search-bag #bag-icon, .search-bag #search-icon {
+    height: 20px;
+  }
+}
 .search-bag {
   display: flex;
   align-self: center;
@@ -163,6 +188,23 @@ nav {
   margin-right: 5%;
 }
 
+@media screen and (max-width: 900px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-md-3 {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;
+  }
+  .col-md-3 .quick-shop, .col-md-3 .rating-review {
+    display: none;
+  }
+}
 .col-md-3 {
   display: flex;
   flex-direction: column;
@@ -356,6 +398,27 @@ h4 {
   color: white;
 }
 
+@media screen and (max-width: 1150px) {
+  .sheet-masks-content h1 {
+    font-size: 32px;
+  }
+  .sheet-masks-content p {
+    font-size: 10px;
+  }
+  .sheet-masks-content a {
+    font-size: 12px;
+  }
+
+  .green-life h1 {
+    font-size: 32px;
+  }
+  .green-life p {
+    font-size: 10px;
+  }
+  .green-life a {
+    font-size: 12px;
+  }
+}
 .col-md-4 {
   width: 100%;
   padding: 20px;
