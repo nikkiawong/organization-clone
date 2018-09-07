@@ -227,4 +227,21 @@ nav {
   border: 2px solid #e88310;
 }
 
+.rating-review {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.rating-review img {
+  height: 20px;
+  width: auto;
+  margin-right: 10px;
+}
+.rating-review p {
+  font-size: 12px;
+  color: gray;
+}
+
 /*# sourceMappingURL=output.css.map */
