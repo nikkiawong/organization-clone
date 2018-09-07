@@ -5,6 +5,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 @mixin horizontalMenuStyle {
@@ -16,15 +17,56 @@ html, body {
   }
 }
 
+@mixin categoryTitleStyle {
+  text-align: center;
+  h2 {
+    font-size: 25px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 20px;
+  }
+}
+
+@mixin rowStyle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: {
+    left: 5%;
+    right: 5%;
+  }
+}
+
+@mixin columnStyle {
+  display: flex;
+  flex-direction: column;
+  width: (100% / 4);
+  img {
+    width: 100%;
+    height: auto;
+  }
+  text-align: center;
+}
+
+@mixin coverImageStyle {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
 nav {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .top-black-bar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 4px;
+  padding: 8px;
+  font-size: 12px;
   background-color: black;
   a {
     color: white;
@@ -36,6 +78,7 @@ nav {
   justify-content: flex-end;
   align-items: center;
   @include horizontalMenuStyle;
+  font-size: 12px;
 }
 
 .user-account-links {
@@ -71,6 +114,10 @@ nav {
 .nav-links {
   display: flex;
   wrap: nowrap;
+  a {
+    font-weight: bold;
+    font-size: 15px;
+  }
 }
 
 .search-bag {
@@ -86,9 +133,30 @@ nav {
   margin-left: 10px;
 }
 
+.cover-image {
+  @include coverImageStyle;
+}
+
 .feature-slideshow {
-  img {
-    width: 100%;
-    height: auto;
-  }
+  margin-bottom: 85px;
+}
+
+.category-title {
+  @include categoryTitleStyle;
+}
+
+.row {
+  @include rowStyle;
+}
+
+.col-md-3 {
+  @include columnStyle;
+}
+
+.best-sellers {
+  margin-bottom: 125px;
+}
+
+.product-labels {
+  @include horizontalMenuStyle;
 }
