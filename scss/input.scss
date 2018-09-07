@@ -22,10 +22,11 @@ html, body {
 @mixin categoryTitleStyle {
   text-align: center;
   h2 {
-    font-size: 25px;
-    padding-bottom: 8px;
+    font-size: 22px;
+    padding-bottom: 4px;
     border-bottom: 2px solid #000;
   }
+  margin-bottom: -15px;
 }
 
 @mixin rowStyle {
@@ -43,8 +44,10 @@ html, body {
   flex-direction: column;
   width: (100% / 4);
   img {
-    width: 100%;
+    width: 80%;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
   text-align: center;
 }
@@ -60,6 +63,18 @@ a {
   &:hover {
     color: $innisfree-green;
     text-decoration: underline;
+  }
+}
+
+@mixin categoryLabelStyle {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  border-radius: 18px;
+  width: 60px;
+  font: {
+    size: 12px;
+    weight: 500;
   }
 }
 
@@ -175,7 +190,15 @@ nav {
 }
 
 .category-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
   text-align: center;
+  font: {
+    size: 14px;
+    weight: bold;
+  }
 }
 
 .category-headline {
@@ -190,6 +213,12 @@ nav {
 
 .col-md-3 {
   @include columnStyle;
+  h3 {
+    font: {
+      size: 18px;
+      weight: normal;
+    }
+  }
 }
 
 .best-sellers {
@@ -197,5 +226,32 @@ nav {
 }
 
 .product-labels {
-  @include horizontalMenuStyle;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+
+.best-label {
+  @include categoryLabelStyle;
+  color: #bc0b1a;
+  border: 2px solid #bc0b1a;
+}
+
+.new-label {
+  @include categoryLabelStyle;
+  color: $innisfree-green;
+  border: 2px solid $innisfree-green;
+}
+
+.limited-label {
+  margin-left: 15px;
+  @include categoryLabelStyle;
+  color: #e88310;
+  border: 2px solid #e88310;
 }
