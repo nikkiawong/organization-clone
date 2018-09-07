@@ -162,11 +162,13 @@ nav {
 .col-md-3 {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 25%;
+  height: 558px;
   text-align: center;
 }
 .col-md-3 img {
-  width: 80%;
+  width: 250px;
   height: auto;
   margin-left: auto;
   margin-right: auto;
@@ -177,7 +179,11 @@ nav {
 }
 
 .best-sellers {
-  margin-bottom: 125px;
+  margin-bottom: 90px;
+}
+
+.whats-new {
+  margin-bottom: 60px;
 }
 
 .product-labels {
@@ -240,8 +246,37 @@ nav {
   margin-right: 10px;
 }
 .rating-review p {
+  font-size: 14px;
+  color: gray;
+}
+
+h4 {
+  font-weight: 500;
+}
+
+.options {
   font-size: 12px;
   color: gray;
+  margin-top: -12px;
+}
+
+.quick-shop {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  width: 185px;
+  font-size: 11px;
+  font-weight: 700;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+.quick-shop:hover {
+  background-color: black;
+  cursor: pointer;
+}
+.quick-shop:hover a {
+  color: white;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=output.css.map */
