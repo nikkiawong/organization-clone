@@ -1,3 +1,5 @@
+$innisfree-green: #257943;
+
 * {
   box-sizing: border-box;
 }
@@ -21,8 +23,8 @@ html, body {
   text-align: center;
   h2 {
     font-size: 25px;
+    padding-bottom: 8px;
     border-bottom: 2px solid #000;
-    padding-bottom: 20px;
   }
 }
 
@@ -55,6 +57,10 @@ html, body {
 a {
   text-decoration: none;
   color: black;
+  &:hover {
+    color: $innisfree-green;
+    text-decoration: underline;
+  }
 }
 
 nav {
@@ -62,15 +68,39 @@ nav {
 }
 
 .top-black-bar {
+  background-color: black;
+}
+
+.top-bar-items {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 8px;
+  align-items: center;
+  margin: {
+    left: 20px;
+    right: 10%;
+  }
+  padding: 6px;
   font-size: 12px;
-  background-color: black;
   a {
     color: white;
   }
+}
+
+.about {
+  a {
+    color: $innisfree-green;
+    font-size: 16px;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.promotions {
+  display: flex;
+  align-self: center;
+  text-decoration: underline;
 }
 
 .top-right-menu {
@@ -117,6 +147,9 @@ nav {
   a {
     font-weight: bold;
     font-size: 15px;
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 
@@ -142,6 +175,12 @@ nav {
 }
 
 .category-title {
+  text-align: center;
+}
+
+.category-headline {
+  display: flex;
+  justify-content: center;
   @include categoryTitleStyle;
 }
 
