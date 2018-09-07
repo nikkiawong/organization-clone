@@ -10,6 +10,10 @@ html, body {
   font-family: 'Roboto', sans-serif;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 @mixin horizontalMenuStyle {
   ul {
     li {
@@ -77,6 +81,19 @@ a {
   font: {
     size: 12px;
     weight: 500;
+  }
+}
+
+@mixin fauxButtonStyle {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  width: 185px;
+  &:hover {
+    cursor: pointer;
+    a {
+      text-decoration: none;
+    }
   }
 }
 
@@ -292,10 +309,7 @@ h4 {
 }
 
 .quick-shop {
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  width: 185px;
+  @include fauxButtonStyle;
   font: {
     size: 11px;
     weight: 700;
@@ -304,10 +318,44 @@ h4 {
   border-radius: 3px;
   &:hover {
     background-color: black;
-    cursor: pointer;
     a {
       color: white;
-      text-decoration: none;
+    }
+  }
+}
+
+.sheet-masks-content {
+  width: 38%;
+  display: flex;
+  flex-direction: column;
+  margin: {
+    top: -32%;
+    left: auto;
+    bottom: 17%;
+    right: auto;
+  }
+  position: static;
+  text-align: center;
+  h1 {
+    font-size: 50px;
+    margin-bottom: -10px;
+  }
+}
+
+.discover {
+  @include fauxButtonStyle;
+  font: {
+    size: 15px;
+    weight: 700;
+  }
+  background-color: black;
+  a {
+    color: white;
+  }
+  &:hover {
+    background-color: $innisfree-green;
+    a {
+      color: white;
     }
   }
 }
